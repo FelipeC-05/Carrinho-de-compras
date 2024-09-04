@@ -34,9 +34,9 @@
                 <td><span class="produto">cor:</span> preto</td>
                 <td id="valor_1">1200</td>
                 <td>
-                    <span class="badge bg-danger" onclick="retirar(1)"><i class="bi bi-dash"></i></span>
+                    <span class="badge bg-danger" onclick="alterarQtd(1, '-')"><i class="bi bi-dash"></i></span>
                     <span id="qtd_1">0</span>
-                    <span class="badge bg-success" onclick="adicionar(1)"><i class="bi bi-plus"></i></span>
+                    <span class="badge bg-success" onclick="alterarQtd(1, '+')"><i class="bi bi-plus"></i></span>
                 </td>
                 <td id="total_1">0</td>
             </tr>
@@ -49,9 +49,9 @@
                 <td><span class="produto">cor:</span> preto</td>
                 <td id="valor_2">2500</td>
                 <td>
-                    <span class="badge bg-danger" onclick="retirar(2)"><i class="bi bi-dash"></i></span>
+                    <span class="badge bg-danger" onclick="alterarQtd(2, '-')"><i class="bi bi-dash"></i></span>
                     <span id="qtd_2">0</span>
-                    <span class="badge bg-success" onclick="adicionar(2)"><i class="bi bi-plus"></i></span>
+                    <span class="badge bg-success" onclick="alterarQtd(2, '+')"><i class="bi bi-plus"></i></span>
                 </td>
                 <td id="total_2">0</td>
             </tr>
@@ -64,18 +64,18 @@
                 <td><span class="produto">cor:</span> preto</td>
                 <td id="valor_3">1900</td>
                 <td>  
-                    <span class="badge bg-danger" onclick="retirar(3)"><i class="bi bi-dash"></i></span>
+                    <span class="badge bg-danger" onclick="alterarQtd(3, '-')"><i class="bi bi-dash"></i></span>
                     <span id="qtd_3">0</span>
-                    <span class="badge bg-success" onclick="adicionar(3)"><i class="bi bi-plus"></i></span>
+                    <span class="badge bg-success" onclick="alterarQtd(3, '+')"><i class="bi bi-plus"></i></span>
                 <td id="total_3">0</td>
             </tr>
         </tbody>
 
     </table>
 
-        <footer>
-            <span>
-            subtotal: R$:
+        <footer class="text-center">
+        <span>
+           <span> <i class="bi bi-cart-check"></i> Subtotal: <span id="subtotal">R$:</span>
         </span>
         </footer>
     </div>
